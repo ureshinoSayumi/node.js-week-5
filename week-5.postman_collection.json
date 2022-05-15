@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "9bcc641c-102a-45dc-b4fb-bd57f626abb5",
+		"name": "week-5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cryptic-crag-07255.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"cryptic-crag-07255",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"6\",\r\n    \"email\": \"6\",\r\n    \"photo\": \"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cryptic-crag-07255.herokuapp.com/users",
+					"protocol": "https",
+					"host": [
+						"cryptic-crag-07255",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://cryptic-crag-07255.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"cryptic-crag-07255",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"6277990dd44862af1949fb5b\",\r\n    \"content\": \"3\",\r\n    \"type\": \"3\",\r\n    \"tags\": \"3\",\r\n    \"image\": \"https://imgur.com\",\r\n    \"likes\": 3,\r\n    \"comments\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cryptic-crag-07255.herokuapp.com/posts/62812b0aa70689d4a69a28c8",
+					"protocol": "https",
+					"host": [
+						"cryptic-crag-07255",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"62812b0aa70689d4a69a28c8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得所有user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cryptic-crag-07255.herokuapp.com/users",
+					"protocol": "https",
+					"host": [
+						"cryptic-crag-07255",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"6277990dd44862af1949fb5b\",\r\n    \"content\": \"4\",\r\n    \"type\": \"4\",\r\n    \"tags\": \"4\",\r\n    \"image\": \"https://imgur.com\",\r\n    \"likes\": 4,\r\n    \"comments\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cryptic-crag-07255.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"cryptic-crag-07255",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得所有貼文 加上filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cryptic-crag-07255.herokuapp.com/posts?timeSort=asc&q=2",
+					"protocol": "https",
+					"host": [
+						"cryptic-crag-07255",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "timeSort",
+							"value": "asc"
+						},
+						{
+							"key": "q",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得單筆貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3005/posts/627deac5a332783dd1905988",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3005",
+					"path": [
+						"posts",
+						"627deac5a332783dd1905988"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
