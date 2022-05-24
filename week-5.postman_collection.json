@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "9bcc641c-102a-45dc-b4fb-bd57f626abb5",
+		"_postman_id": "84507b3b-d00c-476d-9e57-ba56a9adc46d",
 		"name": "week-5",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,10 +11,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://cryptic-crag-07255.herokuapp.com/posts",
+					"raw": "https://ciye-week-5.herokuapp.com/posts",
 					"protocol": "https",
 					"host": [
-						"cryptic-crag-07255",
+						"ciye-week-5",
 						"herokuapp",
 						"com"
 					],
@@ -32,7 +32,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"6\",\r\n    \"email\": \"6\",\r\n    \"photo\": \"6\"\r\n}",
+					"raw": "{\r\n    \"name\": \"7\",\r\n    \"email\": \"7\",\r\n    \"photo\": \"7\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,10 +40,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://cryptic-crag-07255.herokuapp.com/users",
+					"raw": "https://ciye-week-5.herokuapp.com/users",
 					"protocol": "https",
 					"host": [
-						"cryptic-crag-07255",
+						"ciye-week-5",
 						"herokuapp",
 						"com"
 					],
@@ -60,10 +60,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://cryptic-crag-07255.herokuapp.com/posts",
+					"raw": "https://ciye-week-5.herokuapp.com/posts",
 					"protocol": "https",
 					"host": [
-						"cryptic-crag-07255",
+						"ciye-week-5",
 						"herokuapp",
 						"com"
 					],
@@ -89,14 +89,15 @@
 					}
 				},
 				"url": {
-					"raw": "https://cryptic-crag-07255.herokuapp.com/posts/62812b0aa70689d4a69a28c8",
+					"raw": "https://ciye-week-5.herokuapp.com//posts/62812b0aa70689d4a69a28c8",
 					"protocol": "https",
 					"host": [
-						"cryptic-crag-07255",
+						"ciye-week-5",
 						"herokuapp",
 						"com"
 					],
 					"path": [
+						"",
 						"posts",
 						"62812b0aa70689d4a69a28c8"
 					]
@@ -110,10 +111,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://cryptic-crag-07255.herokuapp.com/users",
+					"raw": "https://ciye-week-5.herokuapp.com/users",
 					"protocol": "https",
 					"host": [
-						"cryptic-crag-07255",
+						"ciye-week-5",
 						"herokuapp",
 						"com"
 					],
@@ -139,10 +140,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://cryptic-crag-07255.herokuapp.com/posts",
+					"raw": "https://ciye-week-5.herokuapp.com/posts",
 					"protocol": "https",
 					"host": [
-						"cryptic-crag-07255",
+						"ciye-week-5",
 						"herokuapp",
 						"com"
 					],
@@ -171,10 +172,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://cryptic-crag-07255.herokuapp.com/posts?timeSort=asc&q=2",
+					"raw": "https://ciye-week-5.herokuapp.com/posts?timeSort=asc&q=2",
 					"protocol": "https",
 					"host": [
-						"cryptic-crag-07255",
+						"ciye-week-5",
 						"herokuapp",
 						"com"
 					],
@@ -201,15 +202,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:3005/posts/627deac5a332783dd1905988",
-					"protocol": "http",
+					"raw": "https://ciye-week-5.herokuapp.com/posts/627deac5a332783dd1905988",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"ciye-week-5",
+						"herokuapp",
+						"com"
 					],
-					"port": "3005",
 					"path": [
 						"posts",
 						"627deac5a332783dd1905988"
